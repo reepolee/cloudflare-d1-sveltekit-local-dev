@@ -17,3 +17,11 @@ https://www.npmjs.com/package/npm-check-updates
 ```bash
 pnpm install -g npm-check-updates
 ```
+
+## wrangler
+
+https://developers.cloudflare.com/workers/wrangler/install-and-update/
+
+```bash
+pnpm install -g wrangler
+```
