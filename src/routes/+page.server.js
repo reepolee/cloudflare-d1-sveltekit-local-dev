@@ -15,7 +15,7 @@ export const actions = {
 		const response = await db.prepare(sql).run();
 	},
 	add: async () => {
-		let code = 'SI-' + crypto.randomUUID(); // yes, hacky, just to satify unique index contraint
+		let code = 'SI-' + crypto.randomUUID(); // yes, hacky, just to satisfy unique index contraint
 		const insert = `insert into countries (code, name) values ("${code}","Slovenija");`;
 		await db.prepare(insert).run();
 	},
