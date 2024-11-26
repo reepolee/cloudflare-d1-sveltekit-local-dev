@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@libsql/client':
-        specifier: 0.14.0
-        version: 0.14.0
       drizzle-orm:
         specifier: 0.36.4
         version: 0.36.4(@cloudflare/workers-types@4.20241112.0)(@libsql/client@0.14.0)
@@ -24,9 +21,6 @@ importers:
       '@sveltejs/vite-plugin-svelte':
         specifier: 4.0.2
         version: 4.0.2(svelte@5.2.8)(vite@5.4.11(@types/node@22.10.0))
-      '@types/node':
-        specifier: 22.10.0
-        version: 22.10.0
       drizzle-kit:
         specifier: 0.28.1
         version: 0.28.1
@@ -1796,10 +1790,12 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+    optional: true
 
   '@libsql/core@0.14.0':
     dependencies:
       js-base64: 3.7.7
+    optional: true
 
   '@libsql/darwin-arm64@0.4.7':
     optional: true
@@ -1816,8 +1812,10 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+    optional: true
 
-  '@libsql/isomorphic-fetch@0.3.1': {}
+  '@libsql/isomorphic-fetch@0.3.1':
+    optional: true
 
   '@libsql/isomorphic-ws@0.1.5':
     dependencies:
@@ -1826,6 +1824,7 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+    optional: true
 
   '@libsql/linux-arm64-gnu@0.4.7':
     optional: true
@@ -1842,7 +1841,8 @@ snapshots:
   '@libsql/win32-x64-msvc@0.4.7':
     optional: true
 
-  '@neon-rs/load@0.0.4': {}
+  '@neon-rs/load@0.0.4':
+    optional: true
 
   '@polka/url@1.0.0-next.28': {}
 
@@ -1963,6 +1963,7 @@ snapshots:
   '@types/ws@8.5.13':
     dependencies:
       '@types/node': 22.10.0
+    optional: true
 
   acorn-typescript@1.4.13(acorn@8.14.0):
     dependencies:
@@ -2003,7 +2004,8 @@ snapshots:
 
   data-uri-to-buffer@2.0.2: {}
 
-  data-uri-to-buffer@4.0.1: {}
+  data-uri-to-buffer@4.0.1:
+    optional: true
 
   date-fns@4.1.0: {}
 
@@ -2015,7 +2017,8 @@ snapshots:
 
   defu@6.1.4: {}
 
-  detect-libc@2.0.2: {}
+  detect-libc@2.0.2:
+    optional: true
 
   devalue@5.1.1: {}
 
@@ -2161,10 +2164,12 @@ snapshots:
     dependencies:
       node-domexception: 1.0.0
       web-streams-polyfill: 3.3.3
+    optional: true
 
   formdata-polyfill@4.0.10:
     dependencies:
       fetch-blob: 3.2.0
+    optional: true
 
   fsevents@2.3.3:
     optional: true
@@ -2202,7 +2207,8 @@ snapshots:
 
   itty-time@1.0.6: {}
 
-  js-base64@3.7.7: {}
+  js-base64@3.7.7:
+    optional: true
 
   kleur@4.1.5: {}
 
@@ -2218,6 +2224,7 @@ snapshots:
       '@libsql/linux-x64-gnu': 0.4.7
       '@libsql/linux-x64-musl': 0.4.7
       '@libsql/win32-x64-msvc': 0.4.7
+    optional: true
 
   locate-character@3.0.0: {}
 
@@ -2260,13 +2267,15 @@ snapshots:
 
   nanoid@3.3.7: {}
 
-  node-domexception@1.0.0: {}
+  node-domexception@1.0.0:
+    optional: true
 
   node-fetch@3.3.2:
     dependencies:
       data-uri-to-buffer: 4.0.1
       fetch-blob: 3.2.0
       formdata-polyfill: 4.0.10
+    optional: true
 
   node-forge@1.3.1: {}
 
@@ -2288,7 +2297,8 @@ snapshots:
 
   printable-characters@1.0.42: {}
 
-  promise-limit@2.7.0: {}
+  promise-limit@2.7.0:
+    optional: true
 
   readdirp@4.0.2: {}
 
@@ -2446,7 +2456,8 @@ snapshots:
     optionalDependencies:
       vite: 5.4.11(@types/node@22.10.0)
 
-  web-streams-polyfill@3.3.3: {}
+  web-streams-polyfill@3.3.3:
+    optional: true
 
   workerd@1.20241106.1:
     optionalDependencies:
