@@ -15,15 +15,26 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+		"db:generate": "drizzle-kit generate",
+		"db:push": "drizzle-kit push",
+		"db:migrate": "drizzle-kit migrate",
+		"db:studio": "drizzle-kit studio"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-cloudflare": "4.7.4",
-		"@sveltejs/kit": "2.8.1",
-		"@sveltejs/vite-plugin-svelte": "4.0.1",
-		"svelte": "5.2.7",
-		"svelte-check": "4.0.9",
-		"typescript": "5.6.3",
+		"@sveltejs/kit": "2.8.4",
+		"@sveltejs/vite-plugin-svelte": "4.0.2",
+		"@types/node": "22.10.0",
+		"drizzle-kit": "0.28.1",
+		"miniflare": "3.20241106.1",
+		"svelte": "5.2.8",
+		"svelte-check": "4.1.0",
+		"typescript": "5.7.2",
 		"vite": "5.4.11"
+	},
+	"dependencies": {
+		"@libsql/client": "0.14.0",
+		"drizzle-orm": "0.36.4"
 	}
 }

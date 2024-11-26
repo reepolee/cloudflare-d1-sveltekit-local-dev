@@ -1,22 +1,19 @@
 import { db } from '../lib/server/db';
+import { country } from '$lib/server/schema';
 
-export async function load() {
-	const sql = 'select * from countries';
-	const response = await db.prepare(sql).run();
-
+export const load = async () => {
+	const result = await db.select().from(country).all();
 	return {
-		countries: response.results,
+		countries: result,
 	};
-}
+};
 
 export const actions = {
 	delete: async () => {
-		const sql = 'delete from countries';
-		const response = await db.prepare(sql).run();
+		const response = await db.delete(country);
 	},
 	add: async () => {
 		let code = 'SI-' + crypto.randomUUID(); // yes, hacky, just to satisfy unique index contraint
-		const insert = `insert into countries (code, name) values ("${code}","Slovenija");`;
-		await db.prepare(insert).run();
+		await db.insert(country).values({ code, text: 'Slovenija' });
 	},
 };
