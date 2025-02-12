@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS [countries] ;
+
 CREATE TABLE IF NOT EXISTS [countries] (
 	"id" INTEGER PRIMARY KEY autoincrement,
 	"code" TEXT,

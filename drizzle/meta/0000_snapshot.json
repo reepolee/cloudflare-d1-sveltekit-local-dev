@@ -1,7 +1,7 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "ebab6e6e-6119-4fee-9691-2154dc620089",
+  "id": "5dcf48d3-ed59-4ec0-877b-fb4cdc71651b",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "countries": {
@@ -21,8 +21,8 @@
           "notNull": false,
           "autoincrement": false
         },
-        "text": {
-          "name": "text",
+        "name": {
+          "name": "name",
           "type": "text",
           "primaryKey": false,
           "notNull": false,
