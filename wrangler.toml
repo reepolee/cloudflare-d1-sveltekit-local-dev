@@ -14,4 +14,3 @@ pages_build_output_dir = "./.svelte-kit/cloudflare"
 binding = "DB"                                       # Should match preview_database_id
 database_name = "todo"
 database_id = "91645e0b-bc49-43d3-81f3-cbab44dad067" # wrangler d1 info YOUR_DATABASE_NAME
-preview_database_id = "DB"                           # Required for Pages local development
