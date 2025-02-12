@@ -8,7 +8,7 @@ compatibility_date = "2024-01-01"
 # wrangler d1 execute D1_DB --local --file .\schema-migration.sql
 #	
 
-pages_build_output_dir = "./sveltekit/cloudflare"
+pages_build_output_dir = "./.sveltekit/cloudflare"
 
 [[d1_databases]]
 binding = "DB"                                       # Should match preview_database_id
